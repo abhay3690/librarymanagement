@@ -37,5 +37,5 @@ public class Borrower implements Serializable {
     private List<Book> books;
 
     @Enumerated(EnumType.STRING)
-    private Role role; // BORROWER, LIBRARIAN, ADMIN
+    private Role role;
 }
