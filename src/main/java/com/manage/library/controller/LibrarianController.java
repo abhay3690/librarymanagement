@@ -14,11 +14,13 @@ public class LibrarianController {
     private final LibrarianService librarianService;
 
     public LibrarianController(LibrarianService librarianService) {
+
         this.librarianService = librarianService;
     }
 
     @GetMapping("/get-books")
     public ResponseEntity<List<BookDto>> getBooks() {
+
         return ResponseEntity.ok(librarianService.getBooks());
     }
 
