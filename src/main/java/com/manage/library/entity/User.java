@@ -28,7 +28,7 @@ public class User  implements UserDetails {
 
 //    @NonNull
     @Enumerated(EnumType.STRING)
-    private Role role; // ADMIN, LIBRARIAN, BORROWER
+    private Role role;
     @NonNull
     @Size(min = 3, max = 20)
     private String username;

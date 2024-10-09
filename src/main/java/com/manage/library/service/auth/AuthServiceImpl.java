@@ -43,7 +43,7 @@ public class AuthServiceImpl implements AuthService{
         if (optionalUser.isEmpty()){
             User user = new User();
             user.setEmail("admin@gmail.com");
-            user.setUsername("Gaurang");
+            user.setUsername("Abhay");
             user.setPassword(new BCryptPasswordEncoder().encode("admin@123"));
             user.setRole(Role.ADMIN);
             userRepository.save(user);
