@@ -44,7 +44,6 @@ public class AuthController {
 //        return ResponseEntity.status(HttpStatus.CREATED)
 //                .body(new APIResponse<>(createdUserDto, null, HttpStatus.CREATED));
 //    }
-
     @PostMapping("/other/signup")
     public ResponseEntity<UserDto> signUpUser(@RequestBody SignUpRequest signUpRequest) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();

@@ -22,12 +22,12 @@ public class SwaggerConfig implements WebMvcConfigurer {
     @Bean
     OpenAPI customOpenAPI() {
         return new OpenAPI()
-                .info(new Info().title("Seller-Product Application : Backed Api Project")
+                .info(new Info().title("library management Application : Backend Api Project")
                         .version("1.0")
-                        .description("This is my first Full Project")
+                        .description("librrary management project.")
                         .contact(new Contact()
-                                .name("Gaurang Dalvadi")
-                                .email("gaurangdalvadi@gmail.com")))
+                                .name("Abhay Suthar")
+                                .email("abhaysuthar7777@gmail.com")))
                 .addSecurityItem(new SecurityRequirement().addList("bearerAuth"))
                 .components(
                         new Components()

@@ -45,6 +45,7 @@ public class WebSecurityConfiguration {
                 .sessionManagement(manager -> manager.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authenticationProvider(authenticationProvider( ))
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
+        System.out.println("This is the future testing and the functionality are equal and the");
 
         return http.build();
     }
@@ -58,6 +59,7 @@ public class WebSecurityConfiguration {
     public AuthenticationProvider authenticationProvider() {
         DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
         authProvider.setUserDetailsService(userService.userDetailsService());
+        System.out.println("This is the testing purpose & code are restarted as the all functioonality and the ") ;
         authProvider.setPasswordEncoder(passwordEncoder());
         return authProvider;
     }
